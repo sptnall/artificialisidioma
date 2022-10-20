@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+  <script language="javascript" type="text/javascript" src="MESS_webPage.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+  <!-- This line removes any default padding and style.
+       You might only need one of these values set. -->
+  <style> body { padding: 0; margin: 0; background-color:#CCF381;} 
+  button{z-index:10;
+background-color: #CCF381 !important;
+  color: #FF69B4;
+  font-family:'Luminari', mono;
+  font-size: 16px;
+  padding: 3px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;}
+  
+  #centralImage {
+  background:url(data/reload.png) center center no-repeat;
+  position:width/2, height/2;
+  height:70%; 
+  width:70%;
+  margin:auto;
+  background-size:contain;
+  z-index:0;
+}
+</style>
+</head>
+<script>
+function changeImg(id){
+  const elem = document.getElementById('centralImage');
+    elem.style.backgroundImage = "url(data/"+id+".png)";
+  }
+  </script>
+<body>
+<div id="centralImage"></div>
+</body>
+</html>
